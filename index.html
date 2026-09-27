@@ -80,7 +80,19 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-dark bg-dark" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#home">AAAI-27 MOO Robust AI</a>
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#home">MOO Robust AI</a>
+        <div class="dropdown ml-2">
+          <button class="btn btn-dark btn-sm dropdown-toggle d-flex align-items-center" type="button" id="editionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 20px; padding: 3px 12px; font-size: 0.85rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1);">
+            <span style="display: inline-block; width: 8px; height: 8px; background-color: #28a745; border-radius: 50%; margin-right: 6px; box-shadow: 0 0 5px #28a745;"></span> AAAI 2027
+          </button>
+          <div class="dropdown-menu shadow" aria-labelledby="editionDropdown" style="border-radius: 8px; border: none; min-width: 250px; margin-top: 10px;">
+            <h6 class="dropdown-header">Select Edition</h6>
+            <a class="dropdown-item active" href="#" style="font-weight: bold;"><span style="display: inline-block; width: 6px; height: 6px; background-color: #fff; border-radius: 50%; margin-right: 6px;"></span> 2nd Edition (AAAI 2027)</a>
+            <a class="dropdown-item" href="https://liuj-2023.github.io/EvoRobust-NeurIPS2026/" target="_blank"><span style="display: inline-block; width: 6px; height: 6px; background-color: transparent; border: 1px solid #333; border-radius: 50%; margin-right: 6px;"></span> 1st Edition (NeurIPS 2026)</a>
+          </div>
+        </div>
+      </div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fa fa-bars"></i>
@@ -211,17 +223,7 @@
         </ul>
 
         
-        <!-- Previous Editions Section -->
-        <h2 data-aos="fade-up" id="past" class="section-heading"><i class="fas fa-history text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Previous Editions</h2>
-        <p data-aos="fade-up">This workshop is the second edition in our series. You can find information about our previous workshop here:</p>
-        <ul data-aos="fade-up" style="margin-bottom: 40px;">
-          <li style="margin-bottom: 10px;">
-            <strong>1st Edition (NeurIPS 2026):</strong> 
-            <a href="https://liuj-2023.github.io/EvoRobust-NeurIPS2026/" target="_blank" style="color: #007bff; text-decoration: none; border-bottom: 1px solid #007bff;">
-              Self-Evolving Diversity-Driven Search for Robust AI Systems (EvoRobust)
-            </a>
-          </li>
-        </ul>
+        
 
         <!-- Contact Section -->
         <h2 data-aos="fade-up" id="contact" class="section-heading"><i class="fas fa-envelope text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Contact and Further Information</h2>
