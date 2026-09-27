@@ -15,7 +15,7 @@
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css">
+  <link id="theme-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css">
 
   <style>
     body {
@@ -75,7 +75,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #f8f9fa;">
+<body>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-dark bg-dark" id="mainNav">
@@ -140,10 +140,10 @@
 
         <!-- Overview Section -->
         <h2 data-aos="fade-up" id="overview" class="section-heading">Overview</h2>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">We invite researchers, practitioners, and students to participate in the <strong>AAAI-27 Workshop on Multi-Objective and Multi-Task Optimization for Robust AI</strong>, a one-day workshop at the Forty-First AAAI Conference on Artificial Intelligence in Montréal, Canada. The workshop will take place on <strong>February 22 or 23, 2027</strong>; the exact date will be assigned by AAAI.</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">Trustworthy AI is inherently multi-dimensional. Modern AI systems must remain accurate and useful while also being robust to adversarial perturbations and distribution shift, safe, fair, privacy-preserving, transparent, reliable, and efficient. These requirements often interact or conflict, and a single scalar score can obscure the trade-offs that matter for training, evaluation, and deployment.</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">The workshop connects multi-objective optimization (MOO), evolutionary computation, multitask learning, and robust and trustworthy AI. We will explore how Pareto-aware optimization, hard constraints, preference elicitation, and knowledge transfer across tasks can address competing trustworthiness requirements in foundation models, reinforcement learning, and autonomous systems.</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">The workshop builds on the research agenda of the NeurIPS 2026 Self-Evolving Diversity-Driven Search for Robust AI Systems (EvoRobust) workshop, with a central focus on multi-objective and multi-task optimization. We welcome theory, algorithms, applications, and evaluations, including related work that motivates new optimization formulations. Contributions from early-career researchers and across disciplines are particularly encouraged.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">We invite researchers, practitioners, and students to participate in the <strong>AAAI-27 Workshop on Multi-Objective and Multi-Task Optimization for Robust AI</strong>, a one-day workshop at the Forty-First AAAI Conference on Artificial Intelligence in Montréal, Canada. The workshop will take place on <strong>February 22 or 23, 2027</strong>; the exact date will be assigned by AAAI.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">Trustworthy AI is inherently multi-dimensional. Modern AI systems must remain accurate and useful while also being robust to adversarial perturbations and distribution shift, safe, fair, privacy-preserving, transparent, reliable, and efficient. These requirements often interact or conflict, and a single scalar score can obscure the trade-offs that matter for training, evaluation, and deployment.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">The workshop connects multi-objective optimization (MOO), evolutionary computation, multitask learning, and robust and trustworthy AI. We will explore how Pareto-aware optimization, hard constraints, preference elicitation, and knowledge transfer across tasks can address competing trustworthiness requirements in foundation models, reinforcement learning, and autonomous systems.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">The workshop builds on the research agenda of the NeurIPS 2026 Self-Evolving Diversity-Driven Search for Robust AI Systems (EvoRobust) workshop, with a central focus on multi-objective and multi-task optimization. We welcome theory, algorithms, applications, and evaluations, including related work that motivates new optimization formulations. Contributions from early-career researchers and across disciplines are particularly encouraged.</p>
 
         <!-- Important Dates Section -->
         <h2 data-aos="fade-up" id="dates" class="section-heading">Important Dates</h2>
@@ -152,11 +152,11 @@
           <li class="list-group-item" style="border-left: 5px solid #17a2b8;"><strong>Author notification:</strong> December 2, 2026.</li>
           <li class="list-group-item" style="border-left: 5px solid #28a745;"><strong>Workshop:</strong> one day during February 22–23, 2027 (exact date and time to be assigned by AAAI).</li>
         </ul>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;"><em>Instructions and any deadline for final versions will be communicated to accepted authors by the organizers.</em></p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; "><em>Instructions and any deadline for final versions will be communicated to accepted authors by the organizers.</em></p>
 
         <!-- Topics Section -->
         <h2 data-aos="fade-up" id="topics" class="section-heading">Topics of Interest</h2>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">Topics include, but are not limited to:</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">Topics include, but are not limited to:</p>
         <ul data-aos="fade-up">
           <li><strong>Multi-objective formulations for trustworthy AI:</strong> joint objectives and constraints over accuracy, robustness, safety, fairness, privacy, calibration, interpretability, latency, energy, and cost; many-objective learning; uncertainty-aware objectives; and hard trustworthiness constraints.</li>
           <li><strong>MOO algorithms for robust and trustworthy learning:</strong> gradient-based, evolutionary, decomposition-based, preference-guided, constrained, bilevel, Bayesian, surrogate-assisted, multi-fidelity, transfer, and multi-task MOO for training, fine-tuning, evaluation, and deployment.</li>
@@ -169,24 +169,24 @@
 
         <!-- Submission Section -->
         <h2 data-aos="fade-up" id="submission" class="section-heading">Submission Guidelines</h2>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">We invite the following types of submissions:</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">We invite the following types of submissions:</p>
         <ul data-aos="fade-up">
           <li><strong>Full research papers:</strong> up to 8 pages of main content, with references not counting toward the page limit.</li>
           <li><strong>Short, position, and work-in-progress papers:</strong> up to 4 pages of main content, with references not counting toward the page limit. We especially welcome well-motivated position papers, negative results, benchmark/evaluation papers, and reproducibility studies.</li>
         </ul>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">These page limits are specific to this workshop. Figures, tables, and any appendices included in the paper count toward the main-content limit; references do not.</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">Submissions must be in <strong>English</strong>, use the <strong>AAAI-27 two-column format</strong>, and be anonymized for <strong>double-blind review</strong>. Omit author names, affiliations, acknowledgments, and identifying links, and cite your own work in the third person. The AAAI-27 Author Kit is linked from the AAAI-27 conference website. Papers must be submitted as PDF files through the workshop submission site: [SUBMISSION SITE URL].</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">These page limits are specific to this workshop. Figures, tables, and any appendices included in the paper count toward the main-content limit; references do not.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">Submissions must be in <strong>English</strong>, use the <strong>AAAI-27 two-column format</strong>, and be anonymized for <strong>double-blind review</strong>. Omit author names, affiliations, acknowledgments, and identifying links, and cite your own work in the third person. The AAAI-27 Author Kit is linked from the AAAI-27 conference website. Papers must be submitted as PDF files through the workshop submission site: [SUBMISSION SITE URL].</p>
         
         <h4 data-aos="fade-up">Publication Policy</h4>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">This workshop is <strong>non-archival</strong>. Under AAAI workshop policy, AAAI does not publish workshop papers in the AAAI Digital Library or produce workshop technical reports. Accepted papers will instead be made available on the workshop website, subject to author consent. Authors remain responsible for complying with the multiple-submission and prior-publication policies of any other venue to which they submit their work.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">This workshop is <strong>non-archival</strong>. Under AAAI workshop policy, AAAI does not publish workshop papers in the AAAI Digital Library or produce workshop technical reports. Accepted papers will instead be made available on the workshop website, subject to author consent. Authors remain responsible for complying with the multiple-submission and prior-publication policies of any other venue to which they submit their work.</p>
 
         <h4 data-aos="fade-up">Presentation and Participation</h4>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">The workshop will be held <strong>fully in person</strong>. At least one author of each accepted paper must register for the workshop and present it in person as an oral presentation or poster, as assigned by the organizers. <strong>Virtual presentations are not permitted.</strong></p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">The workshop will be held <strong>fully in person</strong>. At least one author of each accepted paper must register for the workshop and present it in person as an oral presentation or poster, as assigned by the organizers. <strong>Virtual presentations are not permitted.</strong></p>
 
         <!-- Workshop Format Section -->
         <h2 data-aos="fade-up" id="format" class="section-heading">Workshop Format</h2>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">The one-day program will combine invited talks, contributed oral presentations, an extended poster session, and a panel discussion. The program will alternate methodological perspectives in multi-objective and multi-task optimization with applications in robust and trustworthy AI, while reserving substantial time for submitted work and interaction.</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">The planned panel, <em>What Belongs on the Pareto Front—and What Must Never Be Traded Away?</em>, will discuss which trustworthiness properties should be optimized and which should be treated as hard constraints; when scalarization hides unacceptable failure modes; how preferences should be specified; and how a single deployable operating point should be chosen from an evolving Pareto set.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">The one-day program will combine invited talks, contributed oral presentations, an extended poster session, and a panel discussion. The program will alternate methodological perspectives in multi-objective and multi-task optimization with applications in robust and trustworthy AI, while reserving substantial time for submitted work and interaction.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">The planned panel, <em>What Belongs on the Pareto Front—and What Must Never Be Traded Away?</em>, will discuss which trustworthiness properties should be optimized and which should be treated as hard constraints; when scalarization hides unacceptable failure modes; how preferences should be specified; and how a single deployable operating point should be chosen from an evolving Pareto set.</p>
 
         <!-- Speakers Section -->
         <h2 data-aos="fade-up" id="speakers" class="section-heading">Confirmed Invited Speakers</h2>
@@ -214,9 +214,9 @@
 
         <!-- Contact Section -->
         <h2 data-aos="fade-up" id="contact" class="section-heading">Contact and Further Information</h2>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">Workshop inquiries: Junhao Dong, Nanyang Technological University.<br>Email: junhao003@ntu.edu.sg.</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;">Workshop website: [WORKSHOP WEBSITE URL]<br>Submission site: [SUBMISSION SITE URL]</p>
-        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; color: #495057;"><em>We look forward to submissions from researchers and practitioners working across optimization, robust learning, trustworthy AI, foundation models, autonomous systems, and related areas.</em></p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">Workshop inquiries: Junhao Dong, Nanyang Technological University.<br>Email: junhao003@ntu.edu.sg.</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; ">Workshop website: [WORKSHOP WEBSITE URL]<br>Submission site: [SUBMISSION SITE URL]</p>
+        <p data-aos="fade-up" style="line-height: 1.8; font-size: 1.1rem; "><em>We look forward to submissions from researchers and practitioners working across optimization, robust learning, trustworthy AI, foundation models, autonomous systems, and related areas.</em></p>
 
           </div>
         </div>
@@ -286,6 +286,30 @@
       new cursoreffects.fairyDustCursor({colors: ["#ffffff", "#333333", "#007bff"]});
     });
   </script>
+
+
+  <!-- Theme Switcher -->
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: rgba(0,0,0,0.8); padding: 15px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2);">
+    <label style="color: white; font-size: 14px; font-weight: bold; margin-bottom: 8px; display: block; font-family: sans-serif;">🎨 Choose a Theme:</label>
+    <select id="theme-selector" class="form-control form-control-sm" style="background-color: #222; color: white; border: 1px solid #444; border-radius: 6px; cursor: pointer;" onchange="
+      document.getElementById('theme-css').href = this.value;
+      localStorage.setItem('saved_theme', this.value);
+    ">
+      <option value="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/litera/bootstrap.min.css">🍎 Litera (Apple / Clean)</option>
+      <option value="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css">🌌 Darkly (Deep Tech Dark)</option>
+      <option value="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css">🤖 Cyborg (Black + Neon)</option>
+      <option value="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">📖 Lux (High-end Luxury)</option>
+      <option value="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/vapor/bootstrap.min.css">🔮 Vapor (Cyberpunk Purple)</option>
+      <option value="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/quartz/bootstrap.min.css">💎 Quartz (Glassmorphism)</option>
+    </select>
+    <script>
+      const savedTheme = localStorage.getItem('saved_theme');
+      if (savedTheme) {
+        document.getElementById('theme-css').href = savedTheme;
+        document.getElementById('theme-selector').value = savedTheme;
+      }
+    </script>
+  </div>
 
 </body>
 
