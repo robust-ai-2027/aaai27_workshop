@@ -114,14 +114,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" id="home" style="background-image: url('./montreal-bg.jpg')">
+  <header class="masthead darkmode-ignore" id="home" style="background-image: url('./montreal-bg.jpg')">
     <div class="overlay" id="particles-js" style="z-index: 0; opacity: 1; background-color: transparent;"></div><div class="overlay" style="z-index: 2; background-color: rgba(33, 37, 41, 0.7); pointer-events: none;"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-10 col-md-10 mx-auto">
           <div class="page-heading">
             <h1>Multi-Objective and Multi-Task Optimization for Robust AI</h1>
-            <span class="subheading">AAAI-27 Workshop <br> February 22–23, 2027, Montréal, Canada<br><br>
+            <span class="subheading"><span id="typed"></span><br> February 22–23, 2027, Montréal, Canada<br><br>
               <div style=" display: flex; justify-content: center; align-items: center;" class="clearfix">
                 <a class="btn btn-primary" href="#submission">Call for Participation</a>
               </div>
@@ -155,15 +155,15 @@
         <!-- Topics Section -->
         <h2 data-aos="fade-up" id="topics" class="section-heading"><i class="fas fa-list-ul text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Topics of Interest</h2>
         <p data-aos="fade-up">Topics include, but are not limited to:</p>
-        <ul data-aos="fade-up">
-          <li><strong>Multi-objective formulations for trustworthy AI:</strong> joint objectives and constraints over accuracy, robustness, safety, fairness, privacy, calibration, interpretability, latency, energy, and cost; many-objective learning; uncertainty-aware objectives; and hard trustworthiness constraints.</li>
-          <li><strong>MOO algorithms for robust and trustworthy learning:</strong> gradient-based, evolutionary, decomposition-based, preference-guided, constrained, bilevel, Bayesian, surrogate-assisted, multi-fidelity, transfer, and multi-task MOO for training, fine-tuning, evaluation, and deployment.</li>
-          <li><strong>Evolutionary multitasking and transfer optimization:</strong> knowledge transfer across tasks, adaptive task relatedness, multi-task search, transfer evolutionary optimization, and robust transfer under heterogeneous or changing objectives.</li>
-          <li><strong>Robust and adversarial learning:</strong> adversarial attacks and defenses, certified robustness, distribution shift, out-of-distribution generalization, stress testing, adaptive attackers, and studies exposing hidden robustness trade-offs.</li>
-          <li><strong>Foundation-model alignment and safety:</strong> multi-objective preference optimization; safety–helpfulness, jailbreak–over-refusal, privacy–utility, and robustness–capability trade-offs; Pareto-aware fine-tuning, model merging, red teaming, and multimodal robustness.</li>
-          <li><strong>Agentic and autonomous AI:</strong> safety-constrained planning and reinforcement learning, tool-use and memory robustness, attacker–defender co-evolution, multi-agent robustness, and Pareto-aware long-horizon adaptation.</li>
-          <li><strong>Responsible AI, evaluation, and deployment:</strong> fairness–accuracy and privacy–utility optimization; Pareto-aware benchmarks, metrics, and stress tests; preference elicitation; deployment-point selection; negative results; and reproducibility studies.</li>
-        </ul>
+        <div data-aos="fade-up" class="topics-accordion">
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Multi-objective formulations for trustworthy AI</summary><div style="margin-top: 8px; color: #6c757d;"> joint objectives and constraints over accuracy, robustness, safety, fairness, privacy, calibration, interpretability, latency, energy, and cost; many-objective learning; uncertainty-aware objectives; and hard trustworthiness constraints.</div></details>
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">MOO algorithms for robust and trustworthy learning</summary><div style="margin-top: 8px; color: #6c757d;"> gradient-based, evolutionary, decomposition-based, preference-guided, constrained, bilevel, Bayesian, surrogate-assisted, multi-fidelity, transfer, and multi-task MOO for training, fine-tuning, evaluation, and deployment.</div></details>
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Evolutionary multitasking and transfer optimization</summary><div style="margin-top: 8px; color: #6c757d;"> knowledge transfer across tasks, adaptive task relatedness, multi-task search, transfer evolutionary optimization, and robust transfer under heterogeneous or changing objectives.</div></details>
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Robust and adversarial learning</summary><div style="margin-top: 8px; color: #6c757d;"> adversarial attacks and defenses, certified robustness, distribution shift, out-of-distribution generalization, stress testing, adaptive attackers, and studies exposing hidden robustness trade-offs.</div></details>
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Foundation-model alignment and safety</summary><div style="margin-top: 8px; color: #6c757d;"> multi-objective preference optimization; safety–helpfulness, jailbreak–over-refusal, privacy–utility, and robustness–capability trade-offs; Pareto-aware fine-tuning, model merging, red teaming, and multimodal robustness.</div></details>
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Agentic and autonomous AI</summary><div style="margin-top: 8px; color: #6c757d;"> safety-constrained planning and reinforcement learning, tool-use and memory robustness, attacker–defender co-evolution, multi-agent robustness, and Pareto-aware long-horizon adaptation.</div></details>
+          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Responsible AI, evaluation, and deployment</summary><div style="margin-top: 8px; color: #6c757d;"> fairness–accuracy and privacy–utility optimization; Pareto-aware benchmarks, metrics, and stress tests; preference elicitation; deployment-point selection; negative results; and reproducibility studies.</div></details>
+        </div>
 
         <!-- Submission Section -->
         <h2 data-aos="fade-up" id="submission" class="section-heading"><i class="fas fa-file-upload text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Submission Guidelines</h2>
@@ -189,15 +189,15 @@
         <!-- Speakers Section -->
         <h2 data-aos="fade-up" id="speakers" class="section-heading"><i class="fas fa-microphone-alt text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Confirmed Invited Speakers</h2>
         <ul data-aos="fade-up">
-          <li><strong>Yoshua Bengio</strong>, Mila / Université de Montréal, Canada.</li>
-          <li><strong>Carlos A. Coello Coello</strong>, CINVESTAV-IPN, Mexico.</li>
-          <li><strong>Andries Engelbrecht</strong>, Stellenbosch University, South Africa.</li>
-          <li><strong>Nikolaus Hansen</strong>, Inria / École Polytechnique, Institut Polytechnique de Paris, France.</li>
-          <li><strong>Sharon Li</strong>, University of Wisconsin–Madison, USA.</li>
-          <li><strong>Gisele L. Pappa</strong>, Federal University of Minas Gerais, Brazil.</li>
-          <li><strong>Dawn Song</strong>, University of California, Berkeley, USA.</li>
-          <li><strong>Kate Smith-Miles</strong>, University of Melbourne, Australia.</li>
-          <li><strong>Xin Yao</strong>, Lingnan University, Hong Kong.</li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="Mila / Université de Montréal, Canada." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Yoshua Bengio</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="CINVESTAV-IPN, Mexico." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Carlos A. Coello Coello</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="Stellenbosch University, South Africa." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Andries Engelbrecht</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="Inria / École Polytechnique, Institut Polytechnique de Paris, France." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Nikolaus Hansen</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="University of Wisconsin–Madison, USA." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Sharon Li</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="Federal University of Minas Gerais, Brazil." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Gisele L. Pappa</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="University of California, Berkeley, USA." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Dawn Song</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="University of Melbourne, Australia." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Kate Smith-Miles</strong></li>
+          <li style="margin-bottom: 10px;"><strong data-tippy-content="Lingnan University, Hong Kong." style="border-bottom: 2px dotted #007bff; cursor: help; color: #007bff; font-size: 1.1rem;">Xin Yao</strong></li>
         </ul>
 
         <!-- Committee Section -->
@@ -281,6 +281,52 @@
     window.addEventListener("load", () => {
       new cursoreffects.fairyDustCursor({colors: ["#ffffff", "#333333", "#007bff"]});
     });
+  </script>
+
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Tippy.js (Tooltips) -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <!-- Darkmode.js -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  
+  <script>
+    // Initialize Typed.js
+    if (document.getElementById('typed')) {
+      new Typed('#typed', {
+        strings: ['AAAI-27 Workshop', 'Multi-Objective Optimization', 'Multi-Task Optimization', 'Robust AI'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+      });
+    }
+
+    // Initialize Tippy.js
+    tippy('[data-tippy-content]', {
+      animation: 'scale',
+      theme: 'light-border',
+      placement: 'right'
+    });
+
+    // Initialize Darkmode.js
+    const darkmodeOptions = {
+      bottom: '32px',
+      right: '32px',
+      time: '0.4s',
+      mixColor: '#fff',
+      backgroundColor: '#fff',
+      buttonColorDark: '#100f2c',
+      buttonColorLight: '#fff',
+      saveInCookies: true,
+      label: '🌓',
+      autoMatchOsTheme: true
+    };
+    new Darkmode(darkmodeOptions).showWidget();
   </script>
 
 </body>
