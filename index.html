@@ -89,6 +89,85 @@
       margin-bottom: 20px;
       scroll-margin-top: 80px;
     }
+    /* CVPR-style profile cards */
+    .profile-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .profile-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 280px;
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+    .profile-wrap img, .profile-wrap .avatar-placeholder {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .profile-wrap .avatar-placeholder {
+      background: #f0f0f0;
+      border: 2px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #bbb;
+    }
+    .profile-wrap .name {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #333;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .profile-wrap .name a {
+      color: #333;
+      text-decoration: none;
+    }
+    .profile-wrap .name a:hover {
+      color: #007bff;
+    }
+    .profile-wrap .position {
+      font-size: 0.85rem;
+      color: #777;
+      margin: 2px 0 0 0;
+    }
+    /* Program table */
+    .program-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    .program-table th {
+      background: #343a40;
+      color: #fff;
+      padding: 12px 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+    .program-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .program-table tr:hover {
+      background: #f8f9fa;
+    }
+    .program-table .tip {
+      font-size: 0.85rem;
+      color: #888;
+      margin: 4px 0 0 0;
+    }
   </style>
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -116,16 +195,16 @@
             <a class="nav-link" href="#dates">Dates</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#topics">Topics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#submission">Submission</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#speakers">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#committee">Committee</a>
+            <a class="nav-link" href="#program">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cfp">Call for Papers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#committee">Organizers</a>
           </li>
         </ul>
       </div>
@@ -194,120 +273,176 @@
         <p data-aos="fade-up">We invite submissions of short papers (4 pages) and full papers (8 pages), excluding references and appendices. All submissions should follow the AAAI format. Submission site: TBD.</p>
         <p data-aos="fade-up">The workshop will be held in a <strong>hybrid format</strong>, allowing both in-person and virtual participation. At least one author of each accepted paper must register for the workshop and present their work. Virtual/Remote Attendance will be available to everyone who has registered for the event.</p>
 
-        <!-- Speakers Section -->
-        <h2 data-aos="fade-up" id="speakers" class="section-heading"><i class="fas fa-microphone-alt text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Confirmed Invited Speakers</h2>
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 70px; height: 70px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #bbb; margin-right: 16px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1.05rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;"><a href="https://scholar.google.com/citations?user=SIayDoQAAAAJ" target="_blank" style="color: #333; text-decoration: none;">Yarin Gal</a></h5>
-                <p style="font-size: 0.85rem; margin: 0; color: #777;">University of Oxford</p>
-              </div>
+        <!-- Guest Speakers Section -->
+        <h2 data-aos="fade-up" id="speakers" class="section-heading"><i class="fas fa-microphone-alt text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Guest Speakers</h2>
+        <div class="profile-group" data-aos="fade-up">
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name"><a href="https://scholar.google.com/citations?user=SIayDoQAAAAJ" target="_blank">Yarin Gal</a></p>
+              <p class="position">University of Oxford</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 70px; height: 70px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #bbb; margin-right: 16px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1.05rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;"><a href="https://scholar.google.com/citations?user=cGxq0cMAAAAJ" target="_blank" style="color: #333; text-decoration: none;">Nicolas Papernot</a></h5>
-                <p style="font-size: 0.85rem; margin: 0; color: #777;">University of Toronto</p>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name"><a href="https://scholar.google.com/citations?user=cGxq0cMAAAAJ" target="_blank">Nicolas Papernot</a></p>
+              <p class="position">University of Toronto</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 70px; height: 70px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #bbb; margin-right: 16px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1.05rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;"><a href="https://scholar.google.com/citations?user=jxwlCUUAAAAJ" target="_blank" style="color: #333; text-decoration: none;">Pin-Yu Chen</a></h5>
-                <p style="font-size: 0.85rem; margin: 0; color: #777;">IBM Research</p>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name"><a href="https://scholar.google.com/citations?user=jxwlCUUAAAAJ" target="_blank">Pin-Yu Chen</a></p>
+              <p class="position">IBM Research</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 70px; height: 70px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #bbb; margin-right: 16px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1.05rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;"><a href="https://scholar.google.com/citations?user=VM7FCvUAAAAJ&hl=zh-CN" target="_blank" style="color: #333; text-decoration: none;">Yiu-ming Cheung</a></h5>
-                <p style="font-size: 0.85rem; margin: 0; color: #777;">Hong Kong Baptist University</p>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name"><a href="https://scholar.google.com/citations?user=VM7FCvUAAAAJ&hl=zh-CN" target="_blank">Yiu-ming Cheung</a></p>
+              <p class="position">Hong Kong Baptist University</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 70px; height: 70px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #bbb; margin-right: 16px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1.05rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;"><a href="https://scholar.google.com/citations?user=HnquB1wAAAAJ&hl=en" target="_blank" style="color: #333; text-decoration: none;">Catherine Huang</a></h5>
-                <p style="font-size: 0.85rem; margin: 0; color: #777;">McAfee / Intel</p>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name"><a href="https://scholar.google.com/citations?user=HnquB1wAAAAJ&hl=en" target="_blank">Catherine Huang</a></p>
+              <p class="position">McAfee / Intel</p>
             </div>
           </div>
         </div>
-        <p data-aos="fade-up" style="color: #888; font-style: italic; font-size: 0.95rem; margin-top: 5px;">More invited speakers will be announced soon...</p>
+        <p data-aos="fade-up" style="color: #888; font-style: italic; font-size: 0.95rem; margin-top: 15px;">More invited speakers will be announced soon...</p>
 
-        <!-- Committee Section -->
-        <h2 data-aos="fade-up" id="committee" class="section-heading"><i class="fas fa-users text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Organizing Committee</h2>
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #bbb; margin-right: 14px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;">Junhao Dong</h5>
-                <p style="font-size: 0.8rem; margin: 0 0 3px 0; color: #777;">NTU, Singapore</p>
-                <a href="mailto:junhao003@ntu.edu.sg" style="font-size: 0.78rem; color: #28a745; text-decoration: none;"><i class="fas fa-envelope"></i> Email</a>
-              </div>
+        <!-- Program Section -->
+        <h2 data-aos="fade-up" id="program" class="section-heading"><i class="fas fa-calendar-day text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Program</h2>
+        <table class="program-table" data-aos="fade-up">
+          <thead>
+            <tr>
+              <th style="width: 160px;">Time (EST)</th>
+              <th>Topic</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Opening Remarks</p>
+                <p class="tip">Organizers</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Invited Talk 1</p>
+                <p class="tip">Speaker TBD</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Invited Talk 2</p>
+                <p class="tip">Speaker TBD</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Coffee Break</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Oral Presentations</p>
+                <p class="tip">Selected papers</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Poster Session</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Invited Talk 3</p>
+                <p class="tip">Speaker TBD</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>TBD</b></td>
+              <td>
+                <p>Panel Discussion &amp; Closing Remarks</p>
+                <p class="tip">All speakers &amp; organizers</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Call for Papers Section -->
+        <h2 data-aos="fade-up" id="cfp" class="section-heading"><i class="fas fa-bullhorn text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Call for Papers</h2>
+        <p data-aos="fade-up">We invite submissions of short papers (4 pages) and full papers (8 pages), excluding references and appendices. All submissions should follow the AAAI format.</p>
+        <p data-aos="fade-up">Topics of interest include but are not limited to:</p>
+        <ul data-aos="fade-up">
+          <li>Multi-objective optimization for trustworthy AI</li>
+          <li>Pareto-aware training and evaluation</li>
+          <li>Evolutionary computation for robust AI</li>
+          <li>Multi-task learning and optimization</li>
+          <li>Adversarial robustness via multi-objective methods</li>
+          <li>Fairness-accuracy trade-offs</li>
+          <li>Privacy-utility optimization</li>
+          <li>Constraint-handling in AI safety</li>
+          <li>Foundation model alignment through optimization</li>
+          <li>Benchmarks for multi-objective AI evaluation</li>
+        </ul>
+        <p data-aos="fade-up"><strong>Submission site:</strong> TBD</p>
+        <p data-aos="fade-up">The workshop will be held in a <strong>hybrid format</strong>, allowing both in-person and virtual participation. At least one author of each accepted paper must register for the workshop and present their work. Virtual/Remote Attendance will be available to everyone who has registered for the event.</p>
+
+        <!-- Workshop Organizers Section -->
+        <h2 data-aos="fade-up" id="committee" class="section-heading"><i class="fas fa-users text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Workshop Organizers</h2>
+        <div class="profile-group" data-aos="fade-up">
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name">Junhao Dong</p>
+              <p class="position">NTU, Singapore</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #bbb; margin-right: 14px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;">Yaqing Hou</h5>
-                <p style="font-size: 0.8rem; margin: 0 0 3px 0; color: #777;">Dalian University of Technology</p>
-                <a href="mailto:houyq@dlut.edu.cn" style="font-size: 0.78rem; color: #28a745; text-decoration: none;"><i class="fas fa-envelope"></i> Email</a>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name">Yaqing Hou</p>
+              <p class="position">Dalian University of Technology</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #bbb; margin-right: 14px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;">Ismini Lourentzou</h5>
-                <p style="font-size: 0.8rem; margin: 0 0 3px 0; color: #777;">UIUC, USA</p>
-                <a href="mailto:lourent2@illinois.edu" style="font-size: 0.78rem; color: #28a745; text-decoration: none;"><i class="fas fa-envelope"></i> Email</a>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name">Ismini Lourentzou</p>
+              <p class="position">UIUC, USA</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #bbb; margin-right: 14px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;">S.-M. Moosavi-Dezfooli</h5>
-                <p style="font-size: 0.8rem; margin: 0 0 3px 0; color: #777;">Apple Zurich, Switzerland</p>
-                <a href="mailto:smoosavi@apple.com" style="font-size: 0.78rem; color: #28a745; text-decoration: none;"><i class="fas fa-envelope"></i> Email</a>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name">S.-M. Moosavi-Dezfooli</p>
+              <p class="position">Apple Zurich, Switzerland</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="d-flex align-items-center p-3 h-100" style="border-radius: 10px; border: 1px solid #eee; transition: all 0.3s ease;">
-              <div style="flex-shrink: 0; width: 60px; height: 60px; border-radius: 50%; background: #f0f0f0; border: 2px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #bbb; margin-right: 14px;"><i class="fas fa-user"></i></div>
-              <div>
-                <h5 style="font-size: 1rem; font-weight: 700; margin: 0 0 2px 0; white-space: nowrap;">Yew-Soon Ong</h5>
-                <p style="font-size: 0.8rem; margin: 0 0 3px 0; color: #777;">NTU / A*STAR, Singapore</p>
-                <a href="mailto:asysong@ntu.edu.sg" style="font-size: 0.78rem; color: #28a745; text-decoration: none;"><i class="fas fa-envelope"></i> Email</a>
-              </div>
+          <div class="profile-wrap">
+            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div>
+              <p class="name">Yew-Soon Ong</p>
+              <p class="position">NTU / A*STAR, Singapore</p>
             </div>
           </div>
         </div>
-
-        
-        
 
         <!-- Contact Section -->
-        <h2 data-aos="fade-up" id="contact" class="section-heading"><i class="fas fa-envelope text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Contact and Further Information</h2>
+        <h2 data-aos="fade-up" id="contact" class="section-heading"><i class="fas fa-envelope text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Contact</h2>
         <p data-aos="fade-up">Workshop inquiries: Junhao Dong, Nanyang Technological University.<br>Email: junhao003@ntu.edu.sg.</p>
-        <p data-aos="fade-up">Submission site: TBD</p>
-        <p data-aos="fade-up"><em>We look forward to submissions from researchers and practitioners working across optimization, robust learning, trustworthy AI, foundation models, autonomous systems, and related areas.</em></p>
 
       </div>
     </div>
