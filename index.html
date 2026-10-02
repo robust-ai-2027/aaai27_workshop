@@ -93,36 +93,42 @@
     .profile-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
-      margin-top: 20px;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
     .profile-wrap {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 16px;
-      min-width: 280px;
-      flex: 1 1 300px;
-      max-width: 400px;
+      text-align: center;
+      gap: 12px;
+      min-width: 220px;
+      flex: 0 1 250px;
     }
     .profile-wrap img, .profile-wrap .avatar-placeholder {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
     }
     .profile-wrap .avatar-placeholder {
       background: #f0f0f0;
-      border: 2px solid #ddd;
+      border: 3px solid #007bff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       color: #bbb;
+    }
+    .profile-wrap .avatar-placeholder.org-avatar {
+      border-color: #28a745;
     }
     .profile-wrap .name {
       font-family: 'Open Sans', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 700;
       color: #333;
       margin: 0;
@@ -136,7 +142,7 @@
       color: #007bff;
     }
     .profile-wrap .position {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #777;
       margin: 2px 0 0 0;
     }
@@ -381,35 +387,35 @@
         <h2 data-aos="fade-up" id="committee" class="section-heading"><i class="fas fa-users text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Workshop Organizers</h2>
         <div class="profile-group" data-aos="fade-up">
           <div class="profile-wrap">
-            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="avatar-placeholder org-avatar"><i class="fas fa-user"></i></div>
             <div>
               <p class="name">Junhao Dong</p>
               <p class="position">NTU, Singapore</p>
             </div>
           </div>
           <div class="profile-wrap">
-            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="avatar-placeholder org-avatar"><i class="fas fa-user"></i></div>
             <div>
               <p class="name">Yaqing Hou</p>
               <p class="position">Dalian University of Technology</p>
             </div>
           </div>
           <div class="profile-wrap">
-            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="avatar-placeholder org-avatar"><i class="fas fa-user"></i></div>
             <div>
               <p class="name">Ismini Lourentzou</p>
               <p class="position">UIUC, USA</p>
             </div>
           </div>
           <div class="profile-wrap">
-            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="avatar-placeholder org-avatar"><i class="fas fa-user"></i></div>
             <div>
               <p class="name">S.-M. Moosavi-Dezfooli</p>
               <p class="position">Apple Zurich, Switzerland</p>
             </div>
           </div>
           <div class="profile-wrap">
-            <div class="avatar-placeholder"><i class="fas fa-user"></i></div>
+            <div class="avatar-placeholder org-avatar"><i class="fas fa-user"></i></div>
             <div>
               <p class="name">Yew-Soon Ong</p>
               <p class="position">NTU / A*STAR, Singapore</p>
