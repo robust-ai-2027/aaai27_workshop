@@ -162,65 +162,139 @@
 
         <!-- Important Dates Section -->
         <h2 data-aos="fade-up" id="dates" class="section-heading"><i class="far fa-calendar-alt text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Important Dates</h2>
-        <ul data-aos="fade-up">
-          <li><strong>Paper submission deadline:</strong> November 20, 2026, 11:59 p.m. Anywhere on Earth (AoE, UTC−12).</li>
-          <li><strong>Author notification:</strong> December 2, 2026.</li>
-          <li><strong>Workshop:</strong> one day during February 22–23, 2027 (exact date and time to be assigned by AAAI).</li>
-        </ul>
-        <p data-aos="fade-up"><em>Instructions and any deadline for final versions will be communicated to accepted authors by the organizers.</em></p>
-
-        <!-- Topics Section -->
-        <h2 data-aos="fade-up" id="topics" class="section-heading"><i class="fas fa-list-ul text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Topics of Interest</h2>
-        <p data-aos="fade-up">Topics include, but are not limited to:</p>
-        <div data-aos="fade-up" class="topics-accordion">
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Multi-objective formulations for trustworthy AI</summary><div style="margin-top: 8px; color: #6c757d;"> joint objectives and constraints over accuracy, robustness, safety, fairness, privacy, calibration, interpretability, latency, energy, and cost; many-objective learning; uncertainty-aware objectives; and hard trustworthiness constraints.</div></details>
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">MOO algorithms for robust and trustworthy learning</summary><div style="margin-top: 8px; color: #6c757d;"> gradient-based, evolutionary, decomposition-based, preference-guided, constrained, bilevel, Bayesian, surrogate-assisted, multi-fidelity, transfer, and multi-task MOO for training, fine-tuning, evaluation, and deployment.</div></details>
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Evolutionary multitasking and transfer optimization</summary><div style="margin-top: 8px; color: #6c757d;"> knowledge transfer across tasks, adaptive task relatedness, multi-task search, transfer evolutionary optimization, and robust transfer under heterogeneous or changing objectives.</div></details>
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Robust and adversarial learning</summary><div style="margin-top: 8px; color: #6c757d;"> adversarial attacks and defenses, certified robustness, distribution shift, out-of-distribution generalization, stress testing, adaptive attackers, and studies exposing hidden robustness trade-offs.</div></details>
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Foundation-model alignment and safety</summary><div style="margin-top: 8px; color: #6c757d;"> multi-objective preference optimization; safety–helpfulness, jailbreak–over-refusal, privacy–utility, and robustness–capability trade-offs; Pareto-aware fine-tuning, model merging, red teaming, and multimodal robustness.</div></details>
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Agentic and autonomous AI</summary><div style="margin-top: 8px; color: #6c757d;"> safety-constrained planning and reinforcement learning, tool-use and memory robustness, attacker–defender co-evolution, multi-agent robustness, and Pareto-aware long-horizon adaptation.</div></details>
-          <details style="margin-bottom: 15px; cursor: pointer; border-left: 3px solid #007bff; padding-left: 15px;"><summary style="font-weight: bold; outline: none; color: #343a40; font-size: 1.1rem;">Responsible AI, evaluation, and deployment</summary><div style="margin-top: 8px; color: #6c757d;"> fairness–accuracy and privacy–utility optimization; Pareto-aware benchmarks, metrics, and stress tests; preference elicitation; deployment-point selection; negative results; and reproducibility studies.</div></details>
+        <div class="row" data-aos="fade-up">
+          <!-- Speaker 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 120px; height: 120px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #007bff; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title mb-1" style="font-size: 1.1rem; font-weight: bold;"><a href="https://scholar.google.com/citations?user=SIayDoQAAAAJ" target="_blank" style="color: inherit; text-decoration: none;">Yarin Gal</a></h5>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">Oxford</p>
+              </div>
+            </div>
+          </div>
+          <!-- Speaker 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 120px; height: 120px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #007bff; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title mb-1" style="font-size: 1.1rem; font-weight: bold;"><a href="https://scholar.google.com/citations?user=cGxq0cMAAAAJ" target="_blank" style="color: inherit; text-decoration: none;">Nicolas Papernot</a></h5>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">University of Toronto</p>
+              </div>
+            </div>
+          </div>
+          <!-- Speaker 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 120px; height: 120px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #007bff; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title mb-1" style="font-size: 1.1rem; font-weight: bold;"><a href="https://scholar.google.com/citations?user=jxwlCUUAAAAJ" target="_blank" style="color: inherit; text-decoration: none;">Pin-Yu Chen</a></h5>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">IBM</p>
+              </div>
+            </div>
+          </div>
+          <!-- Speaker 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 120px; height: 120px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #007bff; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title mb-1" style="font-size: 1.1rem; font-weight: bold;"><a href="https://scholar.google.com/citations?user=VM7FCvUAAAAJ&hl=zh-CN" target="_blank" style="color: inherit; text-decoration: none;">Yiu-ming Cheung</a></h5>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">Hong Kong Baptist University</p>
+              </div>
+            </div>
+          </div>
+          <!-- Speaker 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 120px; height: 120px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #007bff; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title mb-1" style="font-size: 1.1rem; font-weight: bold;"><a href="https://scholar.google.com/citations?user=HnquB1wAAAAJ&hl=en" target="_blank" style="color: inherit; text-decoration: none;">Catherine Huang</a></h5>
+                <p class="card-text text-muted" style="font-size: 0.9rem;">McAfee / Intel</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Submission Section -->
-        <h2 data-aos="fade-up" id="submission" class="section-heading"><i class="fas fa-file-upload text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Submission Guidelines</h2>
-        <p data-aos="fade-up">We invite the following types of submissions:</p>
-        <ul data-aos="fade-up">
-          <li><strong>Full research papers:</strong> up to 8 pages of main content, with references not counting toward the page limit.</li>
-          <li><strong>Short, position, and work-in-progress papers:</strong> up to 4 pages of main content, with references not counting toward the page limit. We especially welcome well-motivated position papers, negative results, benchmark/evaluation papers, and reproducibility studies.</li>
-        </ul>
-        <p data-aos="fade-up">These page limits are specific to this workshop. Figures, tables, and any appendices included in the paper count toward the main-content limit; references do not.</p>
-        <p data-aos="fade-up">Submissions must be in <strong>English</strong>, use the <strong>AAAI-27 two-column format</strong>, and be anonymized for <strong>double-blind review</strong>. Omit author names, affiliations, acknowledgments, and identifying links, and cite your own work in the third person. The AAAI-27 Author Kit is linked from the AAAI-27 conference website. Papers must be submitted as PDF files through the workshop submission site: TBD.</p>
-        
-        <h4 data-aos="fade-up">Publication Policy</h4>
-        <p data-aos="fade-up">This workshop is <strong>non-archival</strong>. Under AAAI workshop policy, AAAI does not publish workshop papers in the AAAI Digital Library or produce workshop technical reports. Accepted papers will instead be made available on the workshop website, subject to author consent. Authors remain responsible for complying with the multiple-submission and prior-publication policies of any other venue to which they submit their work.</p>
-
-        <h4 data-aos="fade-up">Presentation and Participation</h4>
-        <p data-aos="fade-up">The workshop will be held in a <strong>hybrid format</strong>, allowing both in-person and virtual participation. At least one author of each accepted paper must register for the workshop and present their work. Virtual/Remote Attendance will be available to everyone who has registered for the event.</p>
-
-        <!-- Workshop Format Section -->
-        <h2 data-aos="fade-up" id="format" class="section-heading"><i class="fas fa-chalkboard-teacher text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Workshop Format</h2>
-        <p data-aos="fade-up">The one-day program will combine invited talks, contributed oral presentations, an extended poster session, and a panel discussion. The program will alternate methodological perspectives in multi-objective and multi-task optimization with applications in robust and trustworthy AI, while reserving substantial time for submitted work and interaction.</p>
-        <p data-aos="fade-up">The planned panel, <em>What Belongs on the Pareto Front—and What Must Never Be Traded Away?</em>, will discuss which trustworthiness properties should be optimized and which should be treated as hard constraints; when scalarization hides unacceptable failure modes; how preferences should be specified; and how a single deployable operating point should be chosen from an evolving Pareto set.</p>
-
-        <!-- Speakers Section -->
-        <h2 data-aos="fade-up" id="speakers" class="section-heading"><i class="fas fa-microphone-alt text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Confirmed Invited Speakers</h2>
-        <ul data-aos="fade-up">
-          <li style="margin-bottom: 10px;"><a href="https://scholar.google.com/citations?user=SIayDoQAAAAJ" target="_blank" style="text-decoration: none;"><strong data-tippy-content="Oxford" style="border-bottom: 2px dotted #007bff; cursor: pointer; color: #007bff; font-size: 1.1rem;">Yarin Gal</strong></a></li>
-          <li style="margin-bottom: 10px;"><a href="https://scholar.google.com/citations?user=cGxq0cMAAAAJ" target="_blank" style="text-decoration: none;"><strong data-tippy-content="University of Toronto" style="border-bottom: 2px dotted #007bff; cursor: pointer; color: #007bff; font-size: 1.1rem;">Nicolas Papernot</strong></a></li>
-          <li style="margin-bottom: 10px;"><a href="https://scholar.google.com/citations?user=jxwlCUUAAAAJ" target="_blank" style="text-decoration: none;"><strong data-tippy-content="IBM" style="border-bottom: 2px dotted #007bff; cursor: pointer; color: #007bff; font-size: 1.1rem;">Pin-Yu Chen</strong></a></li>
-        </ul>
-        <p data-aos="fade-up" style="color: #888; font-style: italic; font-size: 0.95rem; margin-top: 15px;">More invited speakers will be announced soon...</p>
+        <p data-aos="fade-up" style="color: #888; font-style: italic; font-size: 0.95rem; margin-top: 15px; text-align: center;">More invited speakers will be announced soon...</p>
 
         <!-- Committee Section -->
         <h2 data-aos="fade-up" id="committee" class="section-heading"><i class="fas fa-users text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Organizing Committee</h2>
-        <ul data-aos="fade-up">
-          <li><strong>Junhao Dong</strong> (Main Contact), Nanyang Technological University, Singapore. <br>Email: junhao003@ntu.edu.sg</li>
-          <li><strong>Yaqing Hou</strong>, Dalian University of Technology, China. <br>Email: houyq@dlut.edu.cn</li>
-          <li><strong>Ismini Lourentzou</strong>, University of Illinois Urbana-Champaign, USA. <br>Email: lourent2@illinois.edu</li>
-          <li><strong>Seyed-Mohsen Moosavi-Dezfooli</strong>, Apple Zurich, Switzerland. <br>Email: smoosavi@apple.com</li>
-          <li><strong>Yew-Soon Ong</strong>, Nanyang Technological University / A*STAR, Singapore. <br>Email: asysong@ntu.edu.sg</li>
-        </ul>
+        <div class="row" data-aos="fade-up">
+          <!-- Organizer 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 100px; height: 100px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #28a745; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-2">
+                <h5 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Junhao Dong</h5>
+                <p class="card-text text-muted mb-1" style="font-size: 0.8rem;">NTU, Singapore</p>
+                <a href="mailto:junhao003@ntu.edu.sg" style="font-size: 0.8rem; color: #28a745;"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+          <!-- Organizer 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 100px; height: 100px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #28a745; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-2">
+                <h5 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Yaqing Hou</h5>
+                <p class="card-text text-muted mb-1" style="font-size: 0.8rem;">Dalian University of Technology</p>
+                <a href="mailto:houyq@dlut.edu.cn" style="font-size: 0.8rem; color: #28a745;"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+          <!-- Organizer 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 100px; height: 100px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #28a745; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-2">
+                <h5 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Ismini Lourentzou</h5>
+                <p class="card-text text-muted mb-1" style="font-size: 0.8rem;">UIUC, USA</p>
+                <a href="mailto:lourent2@illinois.edu" style="font-size: 0.8rem; color: #28a745;"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+          <!-- Organizer 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 100px; height: 100px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #28a745; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-2">
+                <h5 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">S.-M. Moosavi-Dezfooli</h5>
+                <p class="card-text text-muted mb-1" style="font-size: 0.8rem;">Apple Zurich, Switzerland</p>
+                <a href="mailto:smoosavi@apple.com" style="font-size: 0.8rem; color: #28a745;"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+          <!-- Organizer 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; overflow: hidden; background: #fff;">
+              <div style="width: 100px; height: 100px; margin: 20px auto 10px; border-radius: 50%; background-color: #f8f9fa; border: 3px solid #28a745; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #dee2e6;">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="card-body py-2">
+                <h5 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Yew-Soon Ong</h5>
+                <p class="card-text text-muted mb-1" style="font-size: 0.8rem;">NTU / A*STAR, Singapore</p>
+                <a href="mailto:asysong@ntu.edu.sg" style="font-size: 0.8rem; color: #28a745;"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         
         
