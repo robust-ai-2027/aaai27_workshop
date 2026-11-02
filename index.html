@@ -107,6 +107,16 @@
       min-width: 220px;
       flex: 0 1 250px;
     }
+    @media (min-width: 992px) {
+      .speakers-group {
+        gap: 32px 16px;
+      }
+      .speakers-group .profile-wrap {
+        min-width: 0;
+        flex: 0 0 calc(25% - 13px);
+        max-width: calc(25% - 13px);
+      }
+    }
     .profile-wrap img, .profile-wrap .avatar-placeholder {
       width: 120px;
       height: 120px;
@@ -260,7 +270,7 @@
 
         <!-- Guest Speakers Section -->
         <h2 id="speakers" class="section-heading"><i class="fas fa-microphone-alt text-primary mr-2" style="color: #007bff; margin-right: 12px;"></i>Speakers</h2>
-        <div class="profile-group" style="max-width: 1150px; margin: 0 auto;">
+        <div class="profile-group speakers-group">
           <div class="profile-wrap">
             <img src="images/yarin_gal.webp" alt="Yarin Gal">
             <div>
